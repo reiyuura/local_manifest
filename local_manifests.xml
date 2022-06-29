@@ -1,24 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
- <!-- Remotes -->
-  <remote name="anandhan07" fetch="https://github.com/anandhan07/" />
-  <remote name="clang" fetch="https://gitlab.com/anandhan07/" />
-  <remote name="unitrix" fetch="https://github.com/GhostMaster69-dev/" />
-
- <!-- Trees -->
- <project path="device/xiaomi/vince" name="android_device_xiaomi_vince" remote="anandhan07" revision="spark-12.1-wip" />
- <project path="vendor/xiaomi/vince" name="android_vendor_xiaomi_vince" remote="anandhan07" revision="12.1-wip" />
- <project path="kernel/xiaomi/vince" name="android_kernel_xiaomi_vince" remote="unitrix" revision="12" />
-
- <!-- Clang -->
- <project path="prebuilts/clang/host/linux-x86/clang-14" name="aosp-clang" remote="clang" revision="clang-14" clone-depth="1" />
-
- <!-- Packages -->
- <project path="packages/apps/FMRadio" name="android_packages_apps_FMRadio" remote="anandhan07" revision="12" />
-
- <!-- Sepolicy -->
- <remove-project name="device_qcom_sepolicy-legacy-um" />
- <project path="device/qcom/sepolicy-legacy-um" name="android_device_qcom_sepolicy-legacy-um" remote="anandhan07" revision="spark-12.1" />
-
+	<remote name="rk134"
+		fetch="https://github.com/rk134" />
+	<remote name="clang"
+		fetch="https://github.com/kdrag0n" />
+	<remote name="uni"
+		fetch="https://github.com/Ghostmaster69-dev" />
+	<remote name="line"
+		fetch="https://github.com/LineageOS" />
+	<remote name="rk1345"
+		fetch="https://github.com/rxhulkxnt44" />
+	<remote name="Arrow"
+		fetch="https://github.com/ArrowOS" />
+	<remote name="addy"
+		fetch="https://github.com/adnan-44" />
+	<remote name="sri"
+		fetch="https://github.com/gamehackerever" />
+	<remote name="azure"
+		fetch="https://gitlab.com/Panchajanya1999" />
+	<remote name="prajju"
+		fetch="https://github.com/PrajjuS" />
+	<remote name="pe-d"
+		fetch="https://github.com/pixelexperience-devices" />
+	<remote name="pe-d-gitlab"
+		fetch="https://gitlab.pixelexperience.org/android/vendor-blobs/" />
+	<remote name="los"
+		fetch="https://github.com/LineageOS" />
+	
+	<project path="device/xiaomi/vince" name="device_xiaomi_vince" remote="rk134" revision="twelve.1-xdroid" />
+	<project path="vendor/xiaomi/vince" name="vendor_xiaomi_vince" remote="prajju" revision="elixir-12" clone-depth="1" />
+	<project path="kernel/xiaomi/vince" name="kernel_xiaomi_vince" remote="pe-d" revision="twelve-plus" clone-depth="1" />
+	<project path="prebuilts/clang/host/linux-x86/clang-15" name="azure-clang" remote="azure" revision="main" clone-depth="1" />
 </manifest>
