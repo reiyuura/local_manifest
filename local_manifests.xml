@@ -3,27 +3,16 @@
 
 	<remote name="rk134"
 		fetch="https://github.com/rk134" />
+	<remote name="aku"
+		fetch="https://github.com/reiyuura"/>
+	<remote name="rk1345"
+		fetch="https://github.com/rxhulkxnt44" />
+	<remote name="xd-common"
+		fetch="https://github.com/xdroid-devices" />
+	<remote name="ghost"
+		fetch="https://github.com/GhostMaster69-dev" />
 	
-	<remote name="BlackSuan"
-		fetch="https://github.com/Blacksuan19" />
-	
-	<remote name="clang"
-		fetch="https://github.com/kdrag0n" />
-	
-	<remote name="line"
-		fetch="https://github.com/LineageOS" />
-	
-	<remote name="pe"
-		fetch="https://github.com/PixelExperience" />
-	
-
-	<project path="device/xiaomi/vince" name="device_xiaomi_vince" remote="rk134" revision="11" clone-depth="1" />
-	<project path="vendor/xiaomi/vince" name="vendor_xiaomi_vince" remote="rk134" revision="11" clone-depth="1" />
-	<project path="kernel/xiaomi/vince" name="kernel_dark_ages_vince" remote="BlackSuan" revision="darky" clone-depth="1" />
-	<project path="prebuilts/clang/host/linux-x86/clang-proton" name="proton-clang" remote="clang" revision="master" clone-depth="1" />
-
-	<project path="external/ant-wireless/antradio-library" name="android_external_ant-wireless_antradio-library" revision="lineage-18.1" remote="line" />
-
-
-	
+	<project path="device/xiaomi/vince" name="device_xiaomi_vince" remote="xd-common" revision="twelve" />
+	<project path="vendor/xiaomi/vince" name="vendor_xiaomi_vince" remote="xd-common" revision="twelve" clone-depth="1" />
+	<project path="kernel/xiaomi/vince" name="kernel_xiaomi_vince" remote="ghost" revision="12" clone-depth="1" />
 </manifest>
