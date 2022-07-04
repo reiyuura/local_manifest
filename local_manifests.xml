@@ -6,10 +6,10 @@
 	<remote name="ghost"
 		fetch="https://github.com/GhostMaster69-dev"/>
 	<remote name="clang"
-		fetch="https://gitlab.com/GhostMaster69-dev/"/>
+		fetch="https://gitlab.com/GhostMaster69-dev"/>
 	
 	<project path="device/xiaomi/vince" name="android_device_xiaomi_vince" remote="aku" revision="xd-test" />
 	<project path="vendor/xiaomi/vince" name="android_vendor_xiaomi_vince" remote="aku" revision="xd-test" clone-depth="1" />
 	<project path="kernel/xiaomi/vince" name="android_kernel_xiaomi_vince" remote="ghost" revision="12" clone-depth="1" />
-	<project path="prebuilts/clang/host/linux-x86/clang-cosmic" name="cosmic-clang" revision="master" clone-depth="1"/>
+	<!-- <project path="prebuilts/clang/host/linux-x86/clang-cosmic" name="cosmic-clang" revision="master" clone-depth="1"/> -->
 </manifest>
